@@ -1,38 +1,72 @@
+<<<<<<< HEAD
 # calculadoravuejs
+=======
+Calculadora Vue.js
+>>>>>>> bdd6732 (final)
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplicação web de calculadora aritmética desenvolvida com Vue 3, com foco em componentização, reatividade e estrutura de Single Page Application (SPA).
 
-## Recommended IDE Setup
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Recommended Browser Setup
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Sobre o projeto
 
-## Customize configuration
+Este projeto foi desenvolvido como parte dos estudos em Vue.js, com o objetivo de aplicar na prática conceitos fundamentais de desenvolvimento frontend moderno.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+A aplicação possui uma interface inspirada em sistemas clássicos do Windows, buscando trabalhar não apenas a lógica, mas também a apresentação visual.
 
-## Project Setup
+Funcionalidades
 
-```sh
+Operações básicas: adição, subtração, multiplicação e divisão
+
+Atualização reativa do resultado
+
+Botão para limpeza dos campos
+
+Interface personalizada com estilo retrô
+
+Estrutura organizada em componentes
+
+Tecnologias utilizadas
+
+Vue.js 3
+
+Vite
+
+JavaScript (ES6+)
+
+Bootstrap
+
+CSS
+
+Conceitos aplicados
+
+Componentização
+
+Reatividade
+
+Manipulação de eventos
+
+Organização de projeto frontend
+
+Single Page Application (SPA)
+
+Estrutura do projeto
+src/
+ ├ components/
+ │   ├ Cabecalho.vue
+ │   ├ Calculadora.vue
+ │   └ Resultado.vue
+ ├ App.vue
+ └ main.js
+Como executar o projeto
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
+Status
 
-### Compile and Minify for Production
+Projeto em desenvolvimento.
 
-```sh
-npm run build
-```
+Autor
+
+Samuel Tonon
+Estudante de Segurança da Informação | Desenvolvedor Fullstack em formação
