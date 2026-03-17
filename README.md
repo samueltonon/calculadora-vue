@@ -1,57 +1,50 @@
-<<<<<<< HEAD
-# calculadoravuejs
-=======
-Calculadora Vue.js
->>>>>>> bdd6732 (final)
+# Calculadora Vue.js
 
-Aplicação web de calculadora aritmética desenvolvida com Vue 3, com foco em componentização, reatividade e estrutura de Single Page Application (SPA).
+Aplicação web de calculadora aritmética desenvolvida com Vue 3, com foco em componentização e reatividade.
 
+![Preview](preview.png)
 
+---
 
+## Sobre o projeto
 
-Sobre o projeto
+Projeto desenvolvido para praticar conceitos de Vue.js, incluindo reatividade, componentização e estrutura de aplicações SPA.
 
-Este projeto foi desenvolvido como parte dos estudos em Vue.js, com o objetivo de aplicar na prática conceitos fundamentais de desenvolvimento frontend moderno.
+---
 
-A aplicação possui uma interface inspirada em sistemas clássicos do Windows, buscando trabalhar não apenas a lógica, mas também a apresentação visual.
+## Funcionalidades
 
-Funcionalidades
+* Operações básicas (adição, subtração, multiplicação e divisão)
+* Atualização automática do resultado
+* Botão de limpeza
+* Interface com estilo retrô inspirado no Windows
+* Estrutura organizada em componentes
 
-Operações básicas: adição, subtração, multiplicação e divisão
+---
 
-Atualização reativa do resultado
+## Tecnologias utilizadas
 
-Botão para limpeza dos campos
+* Vue.js 3
+* Vite
+* JavaScript (ES6+)
+* Bootstrap
+* CSS
 
-Interface personalizada com estilo retrô
+---
 
-Estrutura organizada em componentes
+## Conceitos aplicados
 
-Tecnologias utilizadas
+* Componentização
+* Reatividade
+* Manipulação de eventos
+* Organização de projeto frontend
+* Single Page Application (SPA)
 
-Vue.js 3
+---
 
-Vite
+## Estrutura do projeto
 
-JavaScript (ES6+)
-
-Bootstrap
-
-CSS
-
-Conceitos aplicados
-
-Componentização
-
-Reatividade
-
-Manipulação de eventos
-
-Organização de projeto frontend
-
-Single Page Application (SPA)
-
-Estrutura do projeto
+```
 src/
  ├ components/
  │   ├ Cabecalho.vue
@@ -59,14 +52,26 @@ src/
  │   └ Resultado.vue
  ├ App.vue
  └ main.js
-Como executar o projeto
+```
+
+---
+
+## Como executar o projeto
+
+```
 npm install
 npm run dev
-Status
+```
+
+---
+
+## Status
 
 Projeto em desenvolvimento.
 
-Autor
+---
+
+## Autor
 
 Samuel Tonon
 Estudante de Segurança da Informação | Desenvolvedor Fullstack em formação
