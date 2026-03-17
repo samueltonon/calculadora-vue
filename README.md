@@ -46,6 +46,8 @@ Projeto desenvolvido para praticar conceitos de Vue.js, incluindo reatividade, c
 
 ```
 src/
+ ├ assets/
+ │   └ style.css
  ├ components/
  │   ├ Cabecalho.vue
  │   ├ Calculadora.vue
@@ -74,4 +76,5 @@ Projeto em desenvolvimento.
 ## Autor
 
 Samuel Tonon
-Estudante de Segurança da Informação | Desenvolvedor Fullstack em formação
+Estudante de Segurança da Informação
+Desenvolvedor Fullstack em formação
