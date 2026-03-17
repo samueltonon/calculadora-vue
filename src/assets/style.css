@@ -1,0 +1,38 @@
+/* Fundo da aplicação */
+body {
+    background-color: #008080;
+    font-family: 'Courier New', monospace;
+}
+
+/* Caixa principal estilo Windows */
+.win-box {
+    background-color: #c0c0c0;
+    border: 2px solid #fff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+}
+
+/* Barra superior */
+.win-header {
+    background: linear-gradient(to right, #000080, #1084d0);
+    color: white;
+    padding: 6px;
+    font-weight: bold;
+}
+
+/* Botão estilo Windows */
+.win-button {
+    background-color: #c0c0c0;
+    border: 2px outset #fff;
+}
+
+.win-button:active {
+    border: 2px inset #fff;
+}
+
+/* Caixa de resultado */
+.win-result {
+    background-color: white;
+    border: 2px inset #ccc;
+    padding: 8px;
+}

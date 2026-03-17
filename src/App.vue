@@ -1,47 +1,75 @@
+<!--
+@file App.vue
+@author Samuel Tonon
+@date 2026-03-17
+
+@description
+Componente principal da calculadora aritmética.
+Gerencia o estado global e o cálculo automático.
+
+@tech
+Vue.js, Bootstrap
+-->
+
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { reactive, computed } from 'vue'
+
+import Cabecalho from './components/Cabecalho.vue'
+import Calculadora from './components/Calculadora.vue'
+import Resultado from './components/Resultado.vue'
+
+// ESTADO
+const estado = reactive({
+  numero1: null,
+  numero2: null,
+  operacao: '+'
+})
+
+// LIMPAR
+function limparCalculadora() {
+  estado.numero1 = null
+  estado.numero2 = null
+  estado.operacao = '+'
+}
+
+// RESULTADO AUTOMÁTICO
+const resultado = computed(() => {
+  const { numero1, numero2, operacao } = estado
+
+  if (numero1 === null || numero2 === null) {
+    return 'Digite os números'
+  }
+
+  switch (operacao) {
+    case '+': return numero1 + numero2
+    case '-': return numero1 - numero2
+    case '*': return numero1 * numero2
+    case '/':
+      return numero2 === 0
+        ? 'Divisão por zero não permitida'
+        : numero1 / numero2
+    default:
+      return 0
+  }
+})
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="container mt-5 d-flex justify-content-center">
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <div class="win-box p-3 col-md-6">
+
+      <div class="win-header mb-3 text-center">
+        calculadora.exe
+      </div>
+
+      <Cabecalho />
+
+      <Calculadora :estado="estado" :limpar-calculadora="limparCalculadora" />
+
+      <Resultado :resultado="resultado" />
+
     </div>
-  </header>
 
-  <main>
-    <TheWelcome />
-  </main>
+  </div>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
