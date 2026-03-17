@@ -75,8 +75,6 @@ Projeto em desenvolvimento.
 
 ## Autor
 
-Samuel Tonon
----
-Estudante de Segurança da Informação
----
+Samuel Tonon <br>
+Estudante de Segurança da Informação <br>
 Desenvolvedor Fullstack em formação
